@@ -12,7 +12,7 @@ Now paste this on the end of the `repos` array.
 	"repo_name": "Nii Miyo - JJBA Cards",
 	"repo_path": "./repositories/niimiyo-jjba",
 	"data_path": "",
-	"script_path": "script/niimiyo",
+	"script_path": "script",
 	"should_update": true,
 	"should_read": true
 }
@@ -29,7 +29,7 @@ It should be now something like this:
 			"repo_name": "Nii Miyo - JJBA Cards",
 			"repo_path": "./repositories/niimiyo-jjba",
 			"data_path": "",
-			"script_path": "script/niimiyo",
+			"script_path": "script",
 			"should_update": true,
 			"should_read": true
 		}
