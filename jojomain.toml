@@ -17,10 +17,15 @@ code = 0xf00
 name = "${SP}"
 code = 0xf01
 
+[set.niimiyo]
+name = "Nii Miyo - JJBA"
+code = 0xf02
+# To easy search the cards
+
 [[card]]
 id = 1090076073
 name = "Jonathan Joestar"
-# set = "your_setname"
+set = "niimiyo"
 type = "monster effect"
 effect = """Unaffected by the effect of Zombie monsters. At the start of the ${DS}, if this card battles a Zombie monster while in face-up attack position: You can destroy that monster, and if you do, your opponent takes damage equals half that monster's original ATK."""
 atk = 2000
@@ -33,7 +38,7 @@ category = "destroy_monster negate_effect"
 [[card]]
 id = 1090076074
 name = "${SU| Kujo Jotaro}"
-set = "standuser"
+set = "niimiyo standuser"
 type = "monster effect"
 effect = "If this card destroys a monster by battle: It gains 200 ATK."
 atk = 1500
@@ -46,7 +51,7 @@ category = "change_atk_def"
 [[card]]
 id = 1090076075
 name = "${SP| Star Platinum}"
-set = "standpower"
+set = "niimiyo standpower"
 type = "spell equip"
 effect = """${StandText|Star Platinum|Kujo Jotaro}
 While this card is equipped to a monster:
@@ -59,7 +64,7 @@ category = "destroy_st change_atk_def multi_attack"
 [[card]]
 id = 1090076072
 name = "${SU| Higashikata Josuke}"
-set = "standuser"
+set = "niimiyo standuser"
 type = "monster effect"
 effect = """At the start of the ${DS}, if this card battles a Reptile monster: It loses 200 ATK until the end of the ${BP}."""
 atk = 1400
@@ -72,7 +77,7 @@ category = "change_atk_def"
 [[card]]
 id = 1090076076
 name = "${SP| Crazy Diamond}"
-set = "standpower"
+set = "niimiyo standpower"
 type = "spell equip"
 # ot = "ocg tcg"
 effect = """${StandText|Crazy Diamond|Higashikata Josuke}
@@ -86,6 +91,7 @@ category = "destroy_st change_atk_def recover_lp"
 [[card]]
 id = 1090076077
 name = "Meteorite Arrow"
+set = "niimiyo"
 type = "spell"
 effect = """Target 1 face-up "${SU}" monster you control; add from your deck to your hand 1 "${SP}" card that specifically lists the targeted monster. You can only activate 1 "Meteorite Arrow" ${PT}."""
 category = "send_to_hand search"
@@ -93,6 +99,7 @@ category = "send_to_hand search"
 [[card]]
 id = 1090076078
 name = "Do You Believe in Gravity?"
+set = "niimiyo"
 type = "spell continuous"
 effect = """During your ${SbP}, if you control a "${SU}" face-up monster: add (from your deck) to your hand 1 "${SU}" monster or 1 "Meteorite Arrow". You can only use this effect of "Do You Believe in Gravity?" once ${PT}."""
 category = "send_to_hand search"
@@ -100,7 +107,7 @@ category = "send_to_hand search"
 [[card]]
 id = 1090076079
 name = "${SU| Giorno Giovanna}"
-set = "standuser"
+set = "niimiyo standuser"
 type = "monster effect"
 effect = """Target 1 "Meteorite Arrow" in your GY; add it to your hand. You can only use this effect of "${SU| Giorno Giovanna}" once ${PT}."""
 atk = 1400
@@ -113,7 +120,7 @@ strings = ["Negate attack"]
 [[card]]
 id = 1090076080
 name = "${SP| Gold Experience}"
-set = "standpower"
+set = "niimiyo standpower"
 type = "spell equip"
 # ot = "ocg tcg"
 effect = """${StandText|Gold Experience|Giorno Giovanna}
@@ -128,7 +135,7 @@ category = "destroy_st banish change_atk_def piercing multi_attack special_summo
 [[card]]
 id = 1090076081
 name = "${SP| Gold Experience Requiem}"
-set = "standpower"
+set = "niimiyo standpower"
 type = "monster effect fusion nomi"
 # flavor-text = This card is cool
 effect = """You can only control 1 "${SP| Gold Experience Requiem}". Must first be Special Summoned from your extra deck by tributing 1 "${SU| Giorno Giovanna}" you control who has a "${SP| Gold Experience}" equipped to it and banishing face-up 1 "Meteorite Arrow" from your hand.
@@ -147,7 +154,7 @@ category = "banish negate_effect damage_lp special_summon"
 [[card]]
 id = 1090076082
 name = "${SU| Cujoh Jolyne}"
-set = "standuser"
+set = "niimiyo standuser"
 type = "monster effect"
 effect = """If a monster attacks this face-up card: You can negate the attack. You can only use this effect of "${SU| Cujoh Jolyne}" once ${PT}."""
 atk = 1200
@@ -160,7 +167,7 @@ strings = ["Negate attack"]
 [[card]]
 id = 1090076083
 name = "${SP| Stone Free}"
-set = "standpower"
+set = "niimiyo standpower"
 type = "spell equip"
 effect = """${StandText|Stone Free|Cujoh Jolyne}
 While this card is equipped to a monster:
