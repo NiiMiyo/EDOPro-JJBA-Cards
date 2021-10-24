@@ -166,7 +166,6 @@ effect = """${StandText|Stone Free|Cujoh Jolyne}
 While this card is equipped to a monster:
 • It gains 800 ATK;
 • It can attack twice per ${BP};
-• You take no effect damage;
 • The equipped monster can attack your opponent directly, but when it does so using this effect, at the start of the ${DS}: It loses 700 ATK until the next ${SbP}."""
 # strings = []
 category = "destroy_monster destroy_st change_atk_def multi_attack"
