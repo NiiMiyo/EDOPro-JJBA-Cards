@@ -26,12 +26,12 @@ function s.initial_effect( c )
   e3:SetCode(EFFECT_EXTRA_ATTACK)
   e3:SetValue(1)
   c:RegisterEffect(e3)
-  -- no damage
-  local e4 = Effect.CreateEffect(c)
-  e4:SetType(EFFECT_TYPE_FIELD)
-  e4:SetCode(EFFECT_NO_EFFECT_DAMAGE)
-  e4:SetRange(LOCATION_SZONE)
-  c:RegisterEffect(e4)
+  -- ! removed - no damage
+  -- local e4 = Effect.CreateEffect(c)
+  -- e4:SetType(EFFECT_TYPE_FIELD)
+  -- e4:SetCode(EFFECT_NO_EFFECT_DAMAGE)
+  -- e4:SetRange(LOCATION_SZONE)
+  -- c:RegisterEffect(e4)
   -- direct attack
   local e5 = Effect.CreateEffect(c)
   e5:SetType(EFFECT_TYPE_EQUIP)
