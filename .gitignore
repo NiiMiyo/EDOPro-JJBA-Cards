@@ -1,3 +1,4 @@
 .vscode/
-expansions/
+# expansions/
+# current version of ygofabrica needs the .cdb file
 pics/
