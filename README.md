@@ -6,7 +6,7 @@ Made with [YGOFabrica](https://github.com/piface314/ygo-fabrica/), this project 
 
 - Parts 7 (Steel Ball Run) and 8 (JoJolion) are also intended to be added in the future.
 
-- For now, this expansion uses card codes from `1090076072` to `1090076083` and archetype codes from `0xf00` to `0xf01`. As more cards are added, the amount of codes may increase, so always make sure it does not conflict with other expansions you may use.
+- For now, this expansion uses card codes from `1090076072` to `1090076085` and archetype codes from `0xf00` to `0xf02`. As more cards are added, the amount of codes may increase, so always make sure it does not conflict with other expansions you may use.
 
 
 # Installation

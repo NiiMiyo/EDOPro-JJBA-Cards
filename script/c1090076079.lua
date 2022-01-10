@@ -35,4 +35,17 @@ function s.operation( e, tp, eg, ep, ev, re, r, rp )
     return
   end
   Duel.SendtoHand(class, tp, REASON_EFFECT)
+
+  local ge1 = Effect.CreateEffect(e:GetHandler())
+  ge1:SetType(EFFECT_TYPE_FIELD)
+  ge1:SetProperty(EFFECT_FLAG_PLAYER_TARGET)
+  ge1:SetCode(EFFECT_CANNOT_SPECIAL_SUMMON)
+  ge1:SetTargetRange(1, 0)
+  ge1:SetTarget(s.splimit)
+  ge1:SetReset(RESET_PHASE + PHASE_END)
+  Duel.RegisterEffect(ge1, tp)
+end
+
+function s.splimit(e, c, sump, sumtype, sumpos, targetp, se)
+  return c:IsLocation(LOCATION_EXTRA)
 end
