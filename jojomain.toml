@@ -79,7 +79,6 @@ id = 1090076076
 name = "${SP| Crazy Diamond}"
 set = "niimiyo standpower"
 type = "spell equip"
-# ot = "ocg tcg"
 effect = """${StandText|Crazy Diamond|Higashikata Josuke}
 While this card is equipped to a monster:
 • It gains 900 ATK;
@@ -109,7 +108,7 @@ id = 1090076079
 name = "${SU| Giorno Giovanna}"
 set = "niimiyo standuser"
 type = "monster effect"
-effect = """Target 1 "Meteorite Arrow" in your GY; add it to your hand. You can only use this effect of "${SU| Giorno Giovanna}" once ${PT}."""
+effect = """Target 1 "Meteorite Arrow" in your GY; add it to your hand. You can only use this effect of "${SU| Giorno Giovanna}" once ${PT}. Also, you cannot Special Summon from the Extra Deck for the rest of this turn."""
 atk = 1400
 def = 1700
 level = 4
@@ -122,7 +121,6 @@ id = 1090076080
 name = "${SP| Gold Experience}"
 set = "niimiyo standpower"
 type = "spell equip"
-# ot = "ocg tcg"
 effect = """${StandText|Gold Experience|Giorno Giovanna}
 While this card is equipped to a monster:
 • It gains 500 ATK and 800 DEF;
@@ -137,7 +135,6 @@ id = 1090076081
 name = "${SP| Gold Experience Requiem}"
 set = "niimiyo standpower"
 type = "monster effect fusion nomi"
-# flavor-text = This card is cool
 effect = """You can only control 1 "${SP| Gold Experience Requiem}". Must first be Special Summoned from your extra deck by tributing 1 "${SU| Giorno Giovanna}" you control who has a "${SP| Gold Experience}" equipped to it and banishing face-up 1 "Meteorite Arrow" from your hand.
 Unaffected by other cards' effects. Cannot be targeted by your opponent's card effects. This card on the field cannot be destroyed by battle or card effect. Cannot be used as cost.
 At the start of the ${DS}, if this card battles a monster: Negate the attack, and if you do, banish that monster.
@@ -148,7 +145,6 @@ def = "?"
 level = 0
 race = "divine_beast"
 attribute = "divine"
-# strings = []
 category = "banish negate_effect damage_lp special_summon"
 
 [[card]]
@@ -174,5 +170,31 @@ While this card is equipped to a monster:
 • It gains 800 ATK;
 • It can attack twice per ${BP};
 • The equipped monster can attack your opponent directly, but when it does so using this effect, at the start of the ${DS}: It loses 700 ATK until the next ${SbP}."""
-# strings = []
-category = "destroy_monster destroy_st change_atk_def multi_attack"
+category = "destroy_st change_atk_def multi_attack"
+
+[[card]]
+id = 1090076084
+name = "${SU| Joseph Joestar}"
+set = "niimiyo standuser"
+type = "monster effect"
+effect = """${OPT}: Change this card's battle position. Toss a coin and call it. If you call it right: Look at your opponent's hand, select 1 card in it and discard that card. You can only use this effect of "${SU| Joseph Joestar}" once ${PT}"""
+atk = 1500
+def = 1500
+level = 4
+race = "warrior"
+attribute = "light"
+strings = ["Toss and discard 1", "Change position"]
+category = "send_to_gy gamble"
+
+[[card]]
+id = 1090076085
+name = "${SP| Hermit Purple}"
+set = "niimiyo standpower"
+type = "spell equip"
+effect = """${StandText|Hermit Purple|Joseph Joestar}
+While this card is equipped to a monster:
+• It gains 300 ATK and 600 DEF;
+• ${OPT}: Look at the top 3 cards of your opponent's deck, and if you do, place them on the top of their deck in any order;
+• Once per chain, when a coin toss is performed, you can choose to redo your coin toss. (If the toss involved multiple coins, redo all of yours.)"""
+strings = ["Use the effect of \"${SP| Hermit Purple}\" to toss again?"]
+category = "change_atk_def gamble"
