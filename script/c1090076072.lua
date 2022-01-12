@@ -14,8 +14,8 @@ end
 function s.atkcon( e, tp, eg, ep, ev, re, r, rp )
   local c = e:GetHandler()
   local at = Duel.GetAttackTarget()
-  return c:IsRelateToBattle() and at:IsRelateToBattle() and
-           at:IsRace(RACE_REPTILE)
+  return (c ~= nil) and (at ~= nil) and c:IsRelateToBattle()
+  and at:IsRelateToBattle() and at:IsRace(RACE_REPTILE)
 end
 
 function s.atkop( e, tp, eg, ep, ev, re, r, rp )
