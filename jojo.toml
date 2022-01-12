@@ -1,27 +1,3 @@
-[macro]
-PT = "per turn"
-OPT = "Once ${PT}"
-SbP = "Standby Phase"
-QE = "(Quick Effect)"
-BP = "Battle Phase"
-DS = "Damage Step"
-SU = "Stand User$1"
-SP = "Stand Power$1"
-StandText = """You can only control 1 "${SP| $1}". Can only be equipped to a "${SU| $2}" you control. If the monster this card is equipped to would be destroyed by battle or card effect: You can destroy this card instead."""
-
-[set.standuser]
-name = "${SU}"
-code = 0xf00
-
-[set.standpower]
-name = "${SP}"
-code = 0xf01
-
-[set.niimiyo]
-name = "Nii Miyo - JJBA"
-code = 0xf02
-# To easy search the cards
-
 [[card]]
 id = 1090076073
 name = "Jonathan Joestar"
@@ -183,7 +159,7 @@ def = 1500
 level = 4
 race = "warrior"
 attribute = "light"
-strings = ["Toss and discard 1", "Change position"]
+strings = ["Toss and make opponent discard", "Change position"]
 category = "send_to_gy gamble"
 
 [[card]]

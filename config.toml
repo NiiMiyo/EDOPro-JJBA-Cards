@@ -4,7 +4,7 @@
 
 [expansion.niimiyo-jjba]
 default = true
-recipe = ['jojomain.toml']
+recipe = [ 'setup.toml', 'jojo.toml' ]
 
 [picset.regular]
 locale = 'en'
