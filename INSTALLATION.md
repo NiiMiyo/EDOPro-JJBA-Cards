@@ -10,11 +10,7 @@ Now paste this on the end of the `repos` array.
 ,{
 	"url": "https://github.com/NiiMiyo/EDOPro-JJBA-Cards",
 	"repo_name": "Nii Miyo - JJBA Cards",
-	"repo_path": "./repositories/niimiyo-jjba",
-	"data_path": "",
-	"script_path": "script",
 	"should_update": true,
-	"should_read": true
 }
 ```
 
@@ -27,11 +23,7 @@ It should be now something like this:
 		,{
 			"url": "https://github.com/NiiMiyo/EDOPro-JJBA-Cards",
 			"repo_name": "Nii Miyo - JJBA Cards",
-			"repo_path": "./repositories/niimiyo-jjba",
-			"data_path": "",
-			"script_path": "script",
 			"should_update": true,
-			"should_read": true
 		}
 	],
 	// Some other stuff
@@ -44,3 +36,5 @@ If some error occurs, check if:
 - you didn't edit the backup by mistake.
 - you didn't delete something from the file by mistake.
 - there is already a comma `(,)` before the one you paste (at the start of the first line), if that is the case, delete any one of them so it has only one.
+
+If it still doesn't work, try using a JSON Validator Tool online to identify the problem.
